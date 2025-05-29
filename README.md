@@ -66,9 +66,10 @@ public class DemoApplication {
 
 That's it! The starter will automatically configure everything else.
 
-## Publishing
+## Documentation
 
-For instructions on how to publish updates to this starter, see [PUBLISHING.md](PUBLISHING.md).
+- [Publishing Guide](PUBLISHING.md) - Instructions for publishing updates to Maven Central
+- [SSH Setup Guide](SSH_SETUP.md) - Detailed guide for setting up SSH with multiple GitHub accounts
 
 ## License
 
