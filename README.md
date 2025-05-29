@@ -2,12 +2,25 @@
 
 A Spring Boot starter providing quick development setup with JPA, Web, H2, and common configurations.
 
+## Why This Starter?
+
+During development and prototyping phases, developers often need to:
+- Set up basic database configurations repeatedly
+- Configure common development tools and settings
+- Deal with boilerplate code for basic features
+- Maintain consistency across multiple projects
+- Quickly prototype ideas without extensive setup
+
+This starter addresses these challenges by providing a pre-configured development environment that's ready to use, allowing developers to focus on building features rather than setting up infrastructure.
+
 ## Features
 
 - Spring Data JPA configuration
 - Web starter configuration
 - H2 database setup
 - Common development configurations
+- Pre-configured development properties
+- Sensible defaults for local development
 
 ## Installation
 
@@ -26,8 +39,32 @@ Add this dependency to your project:
 This starter will automatically configure:
 
 1. JPA with H2 database
+   - In-memory database for development
+   - Auto-configured entity scanning
+   - Basic JPA properties
+
 2. Web endpoints
+   - Basic error handling
+   - Common REST configurations
+   - Development-friendly CORS settings
+
 3. Common development settings
+   - Development-specific logging
+   - Hot reload support
+   - Debug configurations
+
+## Example
+
+```java
+@SpringBootApplication
+public class DemoApplication {
+    public static void main(String[] args) {
+        SpringApplication.run(DemoApplication.class, args);
+    }
+}
+```
+
+That's it! The starter will automatically configure everything else.
 
 ## Publishing
 
