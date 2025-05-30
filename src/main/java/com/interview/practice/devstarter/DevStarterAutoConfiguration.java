@@ -1,12 +1,13 @@
 package com.interview.practice.devstarter;
 
 import jakarta.annotation.PostConstruct;
-import javax.sql.DataSource;
-import org.springframework.boot.autoconfigure.condition.ConditionalOnClass;
+import org.springframework.boot.autoconfigure.AutoConfiguration;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.ComponentScan;
 
 @Configuration
-@ConditionalOnClass(DataSource.class)
+@AutoConfiguration
+@ComponentScan(basePackages = "com.interview.practice.devstarter")
 public class DevStarterAutoConfiguration {
 
     @PostConstruct

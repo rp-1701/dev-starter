@@ -28,9 +28,9 @@ Add this dependency to your project:
 
 ```xml
 <dependency>
-    <groupId>io.github.rp-1701</groupId>
-    <artifactId>dev-starter</artifactId>
-    <version>0.0.1</version>
+   <groupId>io.github.rp-1701</groupId>
+   <artifactId>dev-starter</artifactId>
+   <version>0.0.3</version>
 </dependency>
 ```
 
